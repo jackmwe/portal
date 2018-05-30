@@ -44,25 +44,36 @@
         </div>
           <div class="form-group @if ($errors->has('et')) has-error @endif">
             {!! Form::label('et', 'Evangelistic Team') !!}
-            {{ Form::select('et', [''=>'--Select Regional Team--', 'cet'=>'Central Evangelistic Team(CET)', 
+            {{ Form::select('et', [''=>'--Select Regional Team--', 
+            'cet'=>'Central Evangelistic Team(CET)', 
             'net'=>'Nyanza Evangelistic Team(NET)', 
             'uet'=>'Utermost Evangelistic Team(UET)', 
             'weso' =>'Western Outreach(WESO)', 
-            'mubet'=>'MUBET', 
-            'rivet'=>'Rift-Valley Evangelistic Team(RIVET)'], 
+            'mubet'=>'Mid-Eastern United Brethren Evangelistic Team(MUBET)', 
+            'emuseta'=>'Emulatable University Students Evangelistic Team',
+            'rivet'=>'Rift-Valley Evangelistic Team(RIVET)',
+            'not_yet'=>'Not Yet in Evangelistic Team'], 
             null, ['class' => 'form-control']) }}
         </div>
 
         <div class="form-group @if ($errors->has('ministry')) has-error @endif">
             {!! Form::label('ministry', 'Ministry') !!}
-            {{ Form::select('ministry', [''=>'--Select Ministry--', 'pw'=>'Praise and Worship', 
-            'it'=>'IT-Information Technology', 
+            {{ Form::select('ministry', [''=>'--Select Ministry--', 
+            'pw'=>'Praise and Worship Ministry', 
+            'it'=>'IT-Information Technology Ministry', 
             'ushering'=>'Ushering Ministry', 
             'outreach' =>'Outreach Ministry', 
             'ss'=>'Sunday School Ministry', 
             'choir' =>'Choir Ministry', 
+            'library' =>'Library Ministry',
+            'publicity' =>'Publicity Ministry',
+            'catering' =>'Catering Ministry',
+            'intercessory' =>'Intercessory Ministry',
+            'ffm'=>'Faith Foundation Ministry',
+            'editorial'=>'Editorial Ministry',
             'ebenezer'=>'Ebenezer Ministry', 
-            'instrumentalist'=>'Instrumentalists Ministry'], 
+            'instrumentalist'=>'Instrumentalists Ministry',
+            'not_yet'=>'Not Yet in Ministry Team'], 
             null, ['class' => 'form-control']) }}
         </div>
 

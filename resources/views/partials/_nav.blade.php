@@ -10,14 +10,14 @@
             <span class="icon-bar"></span>
           </button>
           <img src=/logo.jpg alt="EUNCCU" border="0" height="50" width="70"/>
-          <a class="navbar-brand" href="/home">Portal</a>
+          <a class="navbar-brand" href="/">Portal</a>
           
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="{{Request::is('home')? "active" :""}}"><a href="/home">Home </a></li>
+            <li class="{{Request::is('/')? "active" :""}}"><a href="/">Home </a></li>
             <li class="{{Request::is('portal')? "active" :""}}"><a href="/portal">Blog Posts </a></li>
              <li class="dropdown">
                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bs Registration<span class="caret"></span>
@@ -29,7 +29,7 @@
 
                                         
                                     </ul>
-            <li> <a href="/www.eunccu.org">EUNCCU Website</a></li>
+            <li> <a href="http://www.eunccu.org">EUNCCU Website</a></li>
 <!-- 
             <li><a href="/closure">Leadership Nominatiion</a></li>
             <li><a href="/closure">Mission Application</a></li>
